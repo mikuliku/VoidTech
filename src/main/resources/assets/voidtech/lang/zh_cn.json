@@ -1,0 +1,18 @@
+{
+  "itemGroup.voidtech": "VoidTech",
+  "block.voidtech.machine_controller": "虚空科技控制器",
+  "block.voidtech.structure_frame": "多方块结构框架",
+  "block.voidtech.energy_interface": "能量接口",
+  "block.voidtech.item_interface": "物品接口",
+  "block.voidtech.fluid_interface": "流体接口",
+  "item.voidtech.speed_upgrade": "速度升级",
+  "item.voidtech.output_upgrade": "产量升级",
+  "item.voidtech.silk_upgrade": "精准采集升级",
+  "item.voidtech.building_wand": "建筑手杖",
+  "item.voidtech.voidite": "虚空石",
+  "item.voidtech.azureite": "蔚蓝石",
+  "item.voidtech.singularium": "奇点矿",
+  "item.voidtech.nebularium": "星云矿",
+  "item.voidtech.aetherium": "以太矿",
+  "item.voidtech.infinity_core": "无限核心"
+}
