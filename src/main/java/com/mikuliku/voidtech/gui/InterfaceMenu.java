@@ -19,7 +19,10 @@ public class InterfaceMenu extends AbstractContainerMenu {
             FriendlyByteBuf data
     ){
 
-        super(null,id);
+        super(
+    ModMenuTypes.INTERFACE_MENU.get(),
+    id
+);
 
     }
 
