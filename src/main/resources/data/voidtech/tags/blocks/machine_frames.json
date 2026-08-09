@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "voidtech:void_frame",
+    "voidtech:reinforced_void_frame",
+    "voidtech:advanced_void_frame",
+    "voidtech:quantum_void_frame",
+    "voidtech:stellar_void_frame",
+    "voidtech:infinity_void_frame"
+  ]
+}
