@@ -1,8 +1,35 @@
 pluginManagement {
+
     repositories {
+
         gradlePluginPortal()
-        maven { url = 'https://maven.minecraftforge.net/' }
+
+        maven {
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+
     }
+
 }
+
+
+dependencyResolutionManagement {
+
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+
+    repositories {
+
+        mavenCentral()
+
+        maven {
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+
+    }
+
+}
+
 
 rootProject.name = 'VoidTech'
