@@ -5,6 +5,7 @@ import com.mikuliku.voidtech.registry.ModBlocks;
 import com.mikuliku.voidtech.registry.ModMinerBlocks;
 import com.mikuliku.voidtech.registry.ModBlockEntities;
 import com.mikuliku.voidtech.registry.ModItems;
+import com.mikuliku.voidtech.registry.ModInterfaceBlocks;
 
 
 import net.minecraftforge.fml.common.Mod;
@@ -30,22 +31,18 @@ public final class VoidTech {
 
 
 
-        // 基础方块注册
         ModBlocks.BLOCKS.register(modEventBus);
 
 
-
-        // 虚空机器方块注册
         ModMinerBlocks.BLOCKS.register(modEventBus);
 
 
+        ModInterfaceBlocks.BLOCKS.register(modEventBus);
 
-        // 方块实体注册
+
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
 
 
-
-        // 物品注册
         ModItems.ITEMS.register(modEventBus);
 
 
