@@ -2,6 +2,7 @@ package com.mikuliku.voidtech;
 
 
 import com.mikuliku.voidtech.registry.ModBlocks;
+import com.mikuliku.voidtech.registry.ModMinerBlocks;
 import com.mikuliku.voidtech.registry.ModMenuTypes;
 
 import net.minecraftforge.fml.common.Mod;
@@ -24,7 +25,7 @@ public class VoidTech {
 
 
         ModBlocks.BLOCKS.register(bus);
-
+        ModMinerBlocks.BLOCKS.register(bus);
         ModMenuTypes.MENUS.register(bus);
 
     }
