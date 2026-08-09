@@ -6,6 +6,7 @@ import com.mikuliku.voidtech.registry.ModMinerBlocks;
 import com.mikuliku.voidtech.registry.ModBlockEntities;
 import com.mikuliku.voidtech.registry.ModItems;
 import com.mikuliku.voidtech.registry.ModInterfaceBlocks;
+import com.mikuliku.voidtech.registry.ModMenus;
 
 
 import net.minecraftforge.fml.common.Mod;
@@ -44,6 +45,9 @@ public final class VoidTech {
 
 
         ModItems.ITEMS.register(modEventBus);
+
+
+        ModMenus.MENUS.register(modEventBus);
 
 
     }
