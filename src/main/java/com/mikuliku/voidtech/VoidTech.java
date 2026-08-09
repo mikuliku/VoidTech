@@ -12,7 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class VoidTech {
 
 
-    public static final String MOD_ID = "voidtech";
+    public static final String MODID = "voidtech";
 
 
     public VoidTech(){
