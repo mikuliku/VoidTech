@@ -11,7 +11,7 @@ public class VoidMinerMenu extends AbstractContainerMenu {
 
 
     public VoidMinerMenu(int id, Inventory inventory) {
-        super(null,id);
+        super(ModMenuTypes.VOID_MINER_MENU.get(), id);
     }
 
 
