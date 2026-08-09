@@ -25,7 +25,6 @@ public class VoidTech {
 
 
         ModBlocks.BLOCKS.register(bus);
-        ModMinerBlocks.BLOCKS.register(bus);
         ModMenuTypes.MENUS.register(bus);
 
     }
