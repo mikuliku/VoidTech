@@ -3,7 +3,7 @@ package com.mikuliku.voidtech;
 
 import com.mikuliku.voidtech.registry.ModBlocks;
 import com.mikuliku.voidtech.registry.ModMenuTypes;
-import com.mikuliku.voidtech.registry.ModMenus;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -12,10 +12,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class VoidTech {
 
 
-    public static final String MODID = "voidtech";
+    public static final String MOD_ID = "voidtech";
 
 
-    public VoidTech(){
+    public VoidTech() {
 
         var bus =
                 FMLJavaModLoadingContext
@@ -24,6 +24,7 @@ public class VoidTech {
 
 
         ModBlocks.BLOCKS.register(bus);
+
         ModMenuTypes.MENUS.register(bus);
 
     }
