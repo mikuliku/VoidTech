@@ -2,6 +2,7 @@ package com.mikuliku.voidtech.gui;
 
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.ItemStack;
@@ -11,7 +12,7 @@ public class VoidMinerMenu extends AbstractContainerMenu {
 
 
     public VoidMinerMenu(int id, Inventory inventory) {
-        super(ModMenuTypes.VOID_MINER_MENU.get(), id);
+        super(null,id);
     }
 
 
