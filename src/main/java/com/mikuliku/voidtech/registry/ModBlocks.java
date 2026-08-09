@@ -2,6 +2,7 @@ package com.mikuliku.voidtech.registry;
 
 
 import com.mikuliku.voidtech.VoidTech;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
