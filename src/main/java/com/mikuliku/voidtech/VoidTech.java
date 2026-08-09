@@ -1,11 +1,12 @@
 package com.mikuliku.voidtech;
 
+
 import com.mikuliku.voidtech.registry.ModBlocks;
-import com.mikuliku.voidtech.registry.ModItems;
+import com.mikuliku.voidtech.registry.ModMinerBlocks;
 
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 
 
 @Mod(VoidTech.MOD_ID)
@@ -18,16 +19,23 @@ public final class VoidTech {
     public VoidTech() {
 
 
-        IEventBus bus =
+        var modEventBus =
                 FMLJavaModLoadingContext
-                .get()
-                .getModEventBus();
+                        .get()
+                        .getModEventBus();
 
 
-        ModItems.ITEMS.register(bus);
 
-        ModBlocks.BLOCKS.register(bus);
+        // 注册普通方块
+        ModBlocks.BLOCKS.register(modEventBus);
+
+
+
+        // 注册虚空机器方块
+        ModMinerBlocks.BLOCKS.register(modEventBus);
+
 
     }
+
 
 }
