@@ -1,50 +1,34 @@
-package com.mikuliku.voidtech.registry;
+package com.mikuliku.voidtech.menu;
 
 
-import com.mikuliku.voidtech.VoidTech;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.MenuType;
 
 
-
-public class ModMinerBlocks {
-
-
-    public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(
-                    ForgeRegistries.BLOCKS,
-                    VoidTech.MOD_ID
-            );
+public class VoidMinerMenu extends AbstractContainerMenu {
 
 
-
-    public static final RegistryObject<Block> VOID_MINER_CORE =
-            BLOCKS.register(
-                    "void_miner_core",
-                    () -> new Block(
-                            BlockBehaviour.Properties
-                                    .of()
-                                    .mapColor(MapColor.COLOR_LIGHT_BLUE)
-                                    .strength(6F)
-                    )
-            );
+    public VoidMinerMenu(
+            int id,
+            Inventory inventory
+    ){
+        super(null,id);
+    }
 
 
-
-    public static final RegistryObject<Block> VOID_FLUID_CORE =
-            BLOCKS.register(
-                    "void_fluid_core",
-                    () -> new Block(
-                            BlockBehaviour.Properties
-                                    .of()
-                                    .mapColor(MapColor.COLOR_BLUE)
-                                    .strength(6F)
-                    )
-            );
+    public VoidMinerMenu(
+            int id,
+            Inventory inventory,
+            MenuType<?> type
+    ){
+        super(type,id);
+    }
 
 
+    @Override
+    public boolean stillValid(Player player) {
+        return true;
+    }
 }
