@@ -1,34 +1,38 @@
-package com.mikuliku.voidtech.menu;
+package com.mikuliku.voidtech.registry;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import com.mikuliku.voidtech.VoidTech;
+
+public class ModMinerBlocks {
+
+    public static final DeferredRegister<Block> BLOCKS =
+            DeferredRegister.create(
+                    ForgeRegistries.BLOCKS,
+                    VoidTech.MODID
+            );
 
 
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.MenuType;
+    public static final RegistryObject<Block> VOID_MINER =
+            BLOCKS.register(
+                    "void_miner",
+                    () -> new Block(
+                            BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    )
+            );
 
 
-public class VoidMinerMenu extends AbstractContainerMenu {
+    public static final RegistryObject<Block> VOID_INTERFACE =
+            BLOCKS.register(
+                    "void_interface",
+                    () -> new Block(
+                            BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+                    )
+            );
 
-
-    public VoidMinerMenu(
-            int id,
-            Inventory inventory
-    ){
-        super(null,id);
-    }
-
-
-    public VoidMinerMenu(
-            int id,
-            Inventory inventory,
-            MenuType<?> type
-    ){
-        super(type,id);
-    }
-
-
-    @Override
-    public boolean stillValid(Player player) {
-        return true;
-    }
 }
