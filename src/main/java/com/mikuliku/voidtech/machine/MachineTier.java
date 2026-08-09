@@ -70,19 +70,45 @@ public enum MachineTier {
     );
 
 
-
+    /**
+     * 等级
+     */
     private final int level;
 
+
+    /**
+     * 显示名称
+     */
     private final String displayName;
 
+
+    /**
+     * 最大储能
+     */
     private final int energyCapacity;
 
+
+    /**
+     * 产量倍率
+     */
     private final int outputMultiplier;
 
+
+    /**
+     * 速度倍率
+     */
     private final int speedMultiplier;
 
+
+    /**
+     * 升级槽数量
+     */
     private final int upgradeSlots;
 
+
+    /**
+     * 框架材料
+     */
     private final String frameMaterial;
 
 
@@ -110,49 +136,75 @@ public enum MachineTier {
 
 
     public int getLevel(){
+
         return level;
+
     }
+
 
 
     public String getDisplayName(){
+
         return displayName;
+
     }
+
 
 
     public int getEnergyCapacity(){
+
         return energyCapacity;
+
     }
+
 
 
     public int getOutputMultiplier(){
+
         return outputMultiplier;
+
     }
+
 
 
     public int getSpeedMultiplier(){
+
         return speedMultiplier;
+
     }
+
 
 
     public int getUpgradeSlots(){
+
         return upgradeSlots;
+
     }
 
 
+
     public String getFrameMaterial(){
+
         return frameMaterial;
+
     }
 
 
 
     public static MachineTier fromLevel(int level){
 
+
         for(MachineTier tier : values()){
 
-            if(tier.level == level)
+
+            if(tier.level == level){
+
                 return tier;
 
+            }
+
         }
+
 
         return TIER_1;
 
